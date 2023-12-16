@@ -51,7 +51,10 @@ class ACF_init
             'accordion' => 'Accordion Block',
             'case' => 'Case three column Block',
             'leftphoto' => 'Left photo Block',
-            'rightphoto' => 'Right photo Block'
+            'rightphoto' => 'Right photo Block',
+            'blackleft' => 'Black left photo Block',
+            'arrow' => 'Arrow Up',
+            'fiolet' => 'Fiolet Block'
         );
 
         foreach ($blocks as $id => $name) {

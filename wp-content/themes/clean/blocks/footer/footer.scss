@@ -1,8 +1,9 @@
 .footer {
-    padding: 20px 0;
-    background: $backgroundLight;
+  padding: 40px 0;
+  background-color: rgb(27, 27, 30);;
+  color: $white;
 
-    &__copyright {
-        font-size: 12px;
-    }
+  &__copyright {
+    font-size: 12px;
+  }
 }

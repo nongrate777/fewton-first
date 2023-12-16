@@ -118,6 +118,27 @@ accordion__question.forEach(function (el) {
 
 /***/ }),
 
+/***/ "./blocks/arrow/arrow.js":
+/*!*******************************!*\
+  !*** ./blocks/arrow/arrow.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var arrow = document.querySelector('.arrow-up');
+
+if (arrow) {
+  window.addEventListener('scroll', function () {
+    if (window.pageYOffset >= arrow.getBoundingClientRect().top) {
+      arrow.classList.add('arrow-up--visible');
+    } else {
+      arrow.classList.remove('arrow-up--visible');
+    }
+  });
+}
+
+/***/ }),
+
 /***/ "./blocks/header/header.js":
 /*!*********************************!*\
   !*** ./blocks/header/header.js ***!
@@ -222,6 +243,24 @@ function setCss(e) {
 
 /***/ }),
 
+/***/ "./sources/js/functions/smooth-scroll.js":
+/*!***********************************************!*\
+  !*** ./sources/js/functions/smooth-scroll.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+/***/ }),
+
 /***/ "./sources/js/scripts.js":
 /*!*******************************!*\
   !*** ./sources/js/scripts.js ***!
@@ -234,6 +273,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../blocks/header/header */ "./blocks/header/header.js");
 /* harmony import */ var _blocks_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_blocks_header_header__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _blocks_accordion_accordion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../blocks/accordion/accordion */ "./blocks/accordion/accordion.js");
+/* harmony import */ var _blocks_arrow_arrow__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../blocks/arrow/arrow */ "./blocks/arrow/arrow.js");
+/* harmony import */ var _blocks_arrow_arrow__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_blocks_arrow_arrow__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../sources/js/functions/smooth-scroll */ "./sources/js/functions/smooth-scroll.js");
+/* harmony import */ var _sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_3__);
+
+
 
 
 
