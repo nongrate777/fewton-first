@@ -2,7 +2,7 @@
 $fields = get_fields();
 ?>
 
-<section class="accordion">
+<section class="accordion" id="faq">
     <div class="container">
         <?php if (!empty($fields['title'])) { ?>
             <h2><?php echo wp_kses_post($fields['title']); ?></h2>

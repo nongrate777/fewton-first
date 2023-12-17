@@ -4,11 +4,12 @@
  */
 $fields = get_fields();
 $fields_title = $fields['title'];
+$fields_id = $fields['id'];
 $fields_title_right = $fields['title_right'];
 $fields_desc_right = $fields['description_right'];
 $fields_photo_left = $fields['image_left'];
 ?>
-<section class="leftphoto">
+<section class="leftphoto"  <?php if (!empty($fields_id)) { ?>id="<?php echo wp_kses_post($fields_id); ?>" <?php }  ?>>
     <div class="container">
         <?php if (!empty($fields_title)) { ?>
         <h2><?php echo wp_kses_post($fields_title); ?></h2>

@@ -163,6 +163,34 @@ if (header__burger) {
 
 /***/ }),
 
+/***/ "./blocks/tabs/tabs.js":
+/*!*****************************!*\
+  !*** ./blocks/tabs/tabs.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+document.addEventListener('DOMContentLoaded', function () {
+  var tabButtons = document.querySelectorAll('.tabs__inner-tabs-button');
+  var tabContents = document.querySelectorAll('.tabs__inner-tabs-content');
+  tabButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      var tabNumber = button.getAttribute('data-tab');
+      tabButtons.forEach(function (btn) {
+        btn.classList.remove('active');
+      });
+      tabContents.forEach(function (content) {
+        content.classList.remove('active');
+      });
+      button.classList.add('active');
+      document.getElementById('tab-' + tabNumber).classList.add('active');
+    });
+  });
+  tabButtons[0].click();
+});
+
+/***/ }),
+
 /***/ "./sources/js/functions/slideBlock.js":
 /*!********************************************!*\
   !*** ./sources/js/functions/slideBlock.js ***!
@@ -275,8 +303,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_accordion_accordion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../blocks/accordion/accordion */ "./blocks/accordion/accordion.js");
 /* harmony import */ var _blocks_arrow_arrow__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../blocks/arrow/arrow */ "./blocks/arrow/arrow.js");
 /* harmony import */ var _blocks_arrow_arrow__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_blocks_arrow_arrow__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../sources/js/functions/smooth-scroll */ "./sources/js/functions/smooth-scroll.js");
-/* harmony import */ var _sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _blocks_tabs_tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../blocks/tabs/tabs */ "./blocks/tabs/tabs.js");
+/* harmony import */ var _blocks_tabs_tabs__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_blocks_tabs_tabs__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../sources/js/functions/smooth-scroll */ "./sources/js/functions/smooth-scroll.js");
+/* harmony import */ var _sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 

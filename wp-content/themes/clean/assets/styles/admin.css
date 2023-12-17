@@ -894,6 +894,101 @@ p {
   text-align: center;
 }
 
+.blackright {
+  background-color: rgb(27, 27, 30);
+  padding: 80px 0;
+  color: #ffffff;
+}
+.blackright__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.blackright__inner-left {
+  width: 50%;
+  padding-right: 20px;
+}
+.blackright__inner-left h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+  max-width: 388px;
+}
+.blackright__inner-right {
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.blackright__inner-right-item {
+  width: 50%;
+  padding: 0 20px 40px 0;
+}
+.blackright__inner-right-item .item-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  padding-bottom: 10px;
+}
+.blackright__inner-right-item .item-title span {
+  margin-top: 10px;
+  display: block;
+  font-size: 28px;
+  font-weight: 600;
+}
+.blackright__inner-right-item .item-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.tabs {
+  background-color: rgb(245, 245, 245);
+}
+.tabs h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: rgb(11, 36, 113);
+  text-align: center;
+  line-height: 1.3;
+}
+.tabs__inner-tabs-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabs__inner-tabs-content .item-left, .tabs__inner-tabs-content .item-right {
+  width: 50%;
+}
+
+.tabs__inner-tabs-buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabs__inner-tabs-button {
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.tabs__inner-tabs-content {
+  display: none;
+}
+
+.tabs__inner-tabs-content.active {
+  display: block;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 13px;
