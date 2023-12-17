@@ -36,8 +36,12 @@ $fields_title = $fields['title'];
                     ?>
                     <div class="tabs__inner-tabs-content" id="tab-<?php echo esc_attr($tab_count); ?>">
                         <div class="item-left">
-                            <?php echo $tab['tab_title']; ?>
-                            <?php echo $tab['tab_desc']; ?>
+                            <div class="item-left-title">
+                                <?php echo $tab['tab_title']; ?>
+                            </div>
+                            <div class="item-left-desc">
+                                <?php echo $tab['tab_desc']; ?>
+                            </div>
                         </div>
                         <div class="item-right">
                             <img src="<?php echo esc_url($tab['tab_img']['url']); ?>">
