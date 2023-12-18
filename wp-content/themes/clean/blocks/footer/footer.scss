@@ -2,7 +2,39 @@
   padding: 40px 0;
   background-color: rgb(27, 27, 30);;
   color: $white;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    span{
+      font-size: 28px;
+      font-weight: 700;
+      color: $white;
+      margin-left: 8px;
+    }
+    img {
+      max-width: 160px;
 
+      @include media576 {
+        max-width: 100px;
+      }
+    }
+  }
+  &__menu{
+    &-item{
+      margin-bottom: 27px;
+      a{
+        font-size: 14px;
+        font-weight: 600;
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
   &__copyright {
     font-size: 12px;
   }

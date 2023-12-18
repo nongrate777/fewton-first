@@ -6,6 +6,7 @@
             "key": "field_65771a2b3e66f",
             "label": "Title",
             "name": "title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -25,6 +26,7 @@
             "key": "field_65771a3d3e670",
             "label": "Title right",
             "name": "title_right",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -44,6 +46,7 @@
             "key": "field_65771a4c3e671",
             "label": "Description right",
             "name": "description_right",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -63,6 +66,7 @@
             "key": "field_65771a633e672",
             "label": "Image left",
             "name": "image_left",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -87,6 +91,27 @@
             "key": "field_657f0d80171a0",
             "label": "ID",
             "name": "id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65803dc78c572",
+            "label": "Button",
+            "name": "button",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -121,5 +146,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702825358
+    "modified": 1702903249
 }

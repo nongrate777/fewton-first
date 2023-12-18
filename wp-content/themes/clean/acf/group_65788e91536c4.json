@@ -6,6 +6,7 @@
             "key": "field_65788e91692e5",
             "label": "Title",
             "name": "title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -25,6 +26,7 @@
             "key": "field_65788e91694a5",
             "label": "Title left",
             "name": "title_left",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -44,6 +46,7 @@
             "key": "field_65788e9169892",
             "label": "Description left",
             "name": "description_left",
+            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -63,6 +66,7 @@
             "key": "field_65788e9169a83",
             "label": "Image right",
             "name": "image_right",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -82,6 +86,26 @@
             "max_size": "",
             "mime_types": "",
             "preview_size": "medium"
+        },
+        {
+            "key": "field_65803f90ae06e",
+            "label": "Button",
+            "name": "button",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -102,5 +126,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702399712
+    "modified": 1702903709
 }

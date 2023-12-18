@@ -21,10 +21,13 @@ if ( ! class_exists( 'acf_field_date_and_time_picker' ) ) :
 		function initialize() {
 
 			// vars
-			$this->name     = 'date_time_picker';
-			$this->label    = __( 'Date Time Picker', 'acf' );
-			$this->category = 'jquery';
-			$this->defaults = array(
+			$this->name          = 'date_time_picker';
+			$this->label         = __( 'Date Time Picker', 'acf' );
+			$this->category      = 'advanced';
+			$this->description   = __( 'An interactive UI for picking a date and time. The date return format can be customized using the field settings.', 'acf' );
+			$this->preview_image = acf_get_url() . '/assets/images/field-type-previews/field-preview-date-time.png';
+			$this->doc_url       = acf_add_url_utm_tags( 'https://www.advancedcustomfields.com/resources/date-time-picker/', 'docs', 'field-type-selection' );
+			$this->defaults      = array(
 				'display_format' => 'd/m/Y g:i a',
 				'return_format'  => 'd/m/Y g:i a',
 				'first_day'      => 1,
@@ -147,7 +150,6 @@ if ( ! class_exists( 'acf_field_date_and_time_picker' ) ) :
 			<?php acf_text_input( $text_input ); ?>
 		</div>
 			<?php
-
 		}
 
 
@@ -177,7 +179,7 @@ if ( ! class_exists( 'acf_field_date_and_time_picker' ) ) :
 				$field,
 				array(
 					'label'        => __( 'Display Format', 'acf' ),
-					'instructions' => __( 'The format displayed when editing a post', 'acf' ),
+					'hint'         => __( 'The format displayed when editing a post', 'acf' ),
 					'type'         => 'radio',
 					'name'         => 'display_format',
 					'other_choice' => 1,
@@ -195,7 +197,7 @@ if ( ! class_exists( 'acf_field_date_and_time_picker' ) ) :
 				$field,
 				array(
 					'label'        => __( 'Return Format', 'acf' ),
-					'instructions' => __( 'The format returned via template functions', 'acf' ),
+					'hint'         => __( 'The format returned via template functions', 'acf' ),
 					'type'         => 'radio',
 					'name'         => 'return_format',
 					'other_choice' => 1,
@@ -242,9 +244,8 @@ if ( ! class_exists( 'acf_field_date_and_time_picker' ) ) :
 		function format_value( $value, $post_id, $field ) {
 
 			return acf_format_date( $value, $field['return_format'] );
-
 		}
-		
+
 
 		/**
 		 *  This filter is applied to the $field after it is loaded from the database
@@ -283,13 +284,11 @@ if ( ! class_exists( 'acf_field_date_and_time_picker' ) ) :
 				'required'    => ! empty( $field['required'] ),
 			);
 		}
-
 	}
 
 
 	// initialize
 	acf_register_field_type( 'acf_field_date_and_time_picker' );
-
 endif; // class_exists check
 
 ?>

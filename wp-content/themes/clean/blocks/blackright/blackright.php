@@ -13,6 +13,7 @@ $fields_right_desc1 = $fields['right_desc1'];
 $fields_right_desc2 = $fields['right_desc2'];
 $fields_right_desc3 = $fields['right_desc3'];
 $fields_right_desc4 = $fields['right_desc4'];
+$fields_button = $fields['button'];
 ?>
 <section class="blackright">
     <div class="container">
@@ -25,7 +26,9 @@ $fields_right_desc4 = $fields['right_desc4'];
                 <?php if (!empty($fields_description)) { ?>
                     <div class="blackright__inner-left-description"><?php echo wp_kses_post($fields_description); ?></div>
                 <?php }
-                ?>
+                if (!empty($fields_button)) { ?>
+                    <a href="/app?view=SignUp" class="white__button"><?php echo $fields_button; ?></a>
+                <?php } ?>
             </div>
             <div class="blackright__inner-right">
                 <div class="blackright__inner-right-item">

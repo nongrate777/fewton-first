@@ -44,7 +44,7 @@ class General
         add_filter( 'wp_mail_smtp_reports_emails_summary_is_disabled', '__return_true' );
         add_filter('xmlrpc_methods', array($this, 'rxpp_remove_xmlrpc_pingback_ping'));
         add_filter( 'rest_pre_dispatch', array($this, 'close_rest_api_routes'), 10, 3 );
-        add_action('init', array($this, 'update_db'));
+        //add_action('init', array($this, 'update_db'));
     }
 
     public static function lowercase_url(): void
@@ -266,7 +266,7 @@ class General
         return $result;
     }
 
-    public static function update_db(): void
+    /*public static function update_db(): void
     {
         if (is_user_logged_in()) {
             global $wpdb;
@@ -312,7 +312,7 @@ class General
                 delete_option('last_update_db');
             }
         }
-    }
+    }*/
 }
 
 General::instance();

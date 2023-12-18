@@ -402,6 +402,71 @@ p {
   display: none;
 }
 
+.blue__button {
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 1;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(97, 92, 255);
+  border-radius: 5px;
+  background-color: rgb(97, 92, 255);
+  min-width: 130px;
+  text-align: center;
+  transition: 0.5s;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 30px;
+  margin-top: 20px;
+  display: block;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+.blue__button:hover {
+  background: rgba(97, 92, 255, 0.95);
+}
+@media screen and (max-width: 767.98px) {
+  .blue__button {
+    margin: 0 18px 0 auto;
+  }
+}
+
+.white__button {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #030229;
+  line-height: 1;
+  border-radius: 5px;
+  box-shadow: rgba(3, 2, 41, 0.1) 0px 7px 30px -10px;
+  background: none rgb(250, 250, 251);
+  text-align: center;
+  transition: 0.5s;
+  padding: 12px 24px;
+  min-width: 180px;
+  max-width: 180px;
+  margin-top: 20px;
+  display: block;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+.white__button:hover {
+  box-shadow: rgba(3, 2, 41, 0.1) 0px 7px 30px -10px;
+  background: none rgb(239, 239, 255);
+  color: rgb(97, 92, 255);
+}
+@media screen and (max-width: 767.98px) {
+  .white__button {
+    margin: 0 18px 0 auto;
+  }
+}
+
+.button-center {
+  margin: 0 auto;
+}
+
 .container {
   width: 1230px;
   margin: auto;
@@ -603,6 +668,44 @@ p {
   padding: 40px 0;
   background-color: rgb(27, 27, 30);
   color: #ffffff;
+}
+.footer .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footer__logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+.footer__logo span {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-left: 8px;
+}
+.footer__logo img {
+  max-width: 160px;
+}
+@media screen and (max-width: 575.98px) {
+  .footer__logo img {
+    max-width: 100px;
+  }
+}
+.footer__menu-item {
+  margin-bottom: 27px;
+}
+.footer__menu-item a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
 }
 .footer__copyright {
   font-size: 12px;
@@ -925,8 +1028,22 @@ p {
 .fiolet {
   background-color: rgb(97, 92, 255);
   color: #ffffff;
-  padding: 130px 0;
+  padding: 60px 0;
   text-align: center;
+}
+.fiolet h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.3;
+  width: calc(100% - 120px);
+  margin-left: 60px;
+  margin-top: 0;
+  margin-right: 60px;
+}
+.fiolet__description {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .blackright {

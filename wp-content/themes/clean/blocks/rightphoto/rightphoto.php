@@ -7,6 +7,7 @@ $fields_title = $fields['title'];
 $fields_title_left = $fields['title_left'];
 $fields_desc_left = $fields['description_left'];
 $fields_photo_right = $fields['image_right'];
+$fields_button = $fields['button'];
 ?>
 <section class="rightphoto">
     <div class="container">
@@ -24,7 +25,9 @@ $fields_photo_right = $fields['image_right'];
                         <?php echo wp_kses_post($fields_desc_left); ?>
                     </div>
                 <?php }
-                ?>
+                if (!empty($fields_button)) { ?>
+                <a href="/app?view=SignUp" class="blue__button"><?php echo $fields_button; ?></a>
+                <?php } ?>
             </div>
             <div class="rightphoto__inner-right">
                 <?php

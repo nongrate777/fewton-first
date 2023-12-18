@@ -32,3 +32,61 @@ p {
 .otgs-development-site-front-end{
     display: none;
 }
+.blue__button {
+    text-decoration: none;
+    color: $white;
+    line-height: 1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(97, 92, 255, 1);
+    border-radius: 5px;
+    background-color: rgb(97, 92, 255);
+    min-width: 130px;
+    text-align: center;
+    transition: 0.5s;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 30px;
+    margin-top: 20px;
+    display: block;
+    width: fit-content;
+
+    &:hover {
+        background: rgba(97, 92, 255, 0.95);
+    }
+
+    @include media768 {
+        margin: 0 18px 0 auto;
+    }
+}
+.white__button {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #030229;
+    line-height: 1;
+    border-radius: 5px;
+    box-shadow: rgba(3, 2, 41, 0.1) 0px 7px 30px -10px;
+    background: none rgb(250, 250, 251);
+    text-align: center;
+    transition: 0.5s;
+    padding: 12px 24px;
+    min-width: 180px;
+    max-width: 180px;
+    margin-top: 20px;
+    display: block;
+    width: fit-content;
+
+    &:hover {
+        box-shadow: rgba(3, 2, 41, 0.1) 0px 7px 30px -10px;
+        background: none rgb(239, 239, 255);
+        color: rgb(97, 92, 255);
+    }
+
+    @include media768 {
+        margin: 0 18px 0 auto;
+    }
+}
+.button-center{
+    margin: 0 auto;
+}

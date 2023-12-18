@@ -6,6 +6,7 @@
             "key": "field_657d871939942",
             "label": "Title",
             "name": "title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -25,6 +26,27 @@
             "key": "field_657d872f39943",
             "label": "Description",
             "name": "description",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65804275df9d8",
+            "label": "Button",
+            "name": "button",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -59,5 +81,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702725448
+    "modified": 1702904447
 }
