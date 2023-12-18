@@ -33,7 +33,7 @@ $fields_desc3  = $fields['description3'];
                 <?php }
                 if(!empty($fields_desc1)) { ?>
                 <div class="case__three-item-description">
-                    <?php echo wp_kses_post($fields_desc1); ?>
+                    <?php echo $fields_desc1; ?>
                 </div>
                 <?php }
                 ?>
@@ -48,7 +48,7 @@ $fields_desc3  = $fields['description3'];
                 <?php }
                 if(!empty($fields_desc2)) { ?>
                     <div class="case__three-item-description">
-                        <?php echo wp_kses_post($fields_desc2); ?>
+                        <?php echo $fields_desc2; ?>
                     </div>
                 <?php }
                 ?>
@@ -63,7 +63,7 @@ $fields_desc3  = $fields['description3'];
                 <?php }
                 if(!empty($fields_desc3)) { ?>
                     <div class="case__three-item-description">
-                        <?php echo wp_kses_post($fields_desc3); ?>
+                        <?php echo $fields_desc3; ?>
                     </div>
                 <?php }
                 ?>

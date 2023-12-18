@@ -463,6 +463,26 @@ p {
   }
 }
 
+.light__button {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4f4aff;
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #4f4aff;
+  border-radius: 5px;
+  padding: 10px 30px;
+  opacity: 1;
+  cursor: pointer;
+  text-decoration: none;
+}
+.light__button a {
+  text-decoration: none;
+}
+
 .button-center {
   margin: 0 auto;
 }
@@ -520,7 +540,9 @@ p {
   display: -ms-flexbox;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
+  gap: 20px;
+  position: relative;
 }
 @media screen and (max-width: 767.98px) {
   .header .container {
@@ -532,6 +554,8 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  left: 15px;
 }
 .header__logo span {
   font-size: 31px;
@@ -586,13 +610,15 @@ p {
   }
 }
 .header__menu a {
-  color: #212121;
+  font-size: 16px;
   font-weight: 500;
+  color: rgb(11, 36, 113);
+  line-height: 1.4;
   text-decoration: none;
   transition: 0.3s;
 }
 .header__menu a:hover {
-  color: #FF8900;
+  color: rgb(97, 92, 255);
 }
 .header__menu a.current {
   color: #FF8900;
@@ -718,6 +744,18 @@ p {
   background-size: cover;
   background-color: rgb(241, 244, 253);
 }
+.banner__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 440px;
+  padding-top: 80px;
+}
+.banner__inner-item {
+  width: 50%;
+}
 @media screen and (max-width: 575.98px) {
   .banner {
     padding: 50px 0;
@@ -725,8 +763,15 @@ p {
 }
 .banner h1 {
   font-size: 50px;
-  margin: 0 0 30px;
+  margin: 0 0 40px;
   color: rgb(11, 36, 113);
+}
+.banner h1 span {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, rgba(97, 92, 255, 0.5)), color-stop(40%, transparent));
+  background: -o-linear-gradient(bottom, rgba(97, 92, 255, 0.5) 40%, transparent 40%);
+  background: linear-gradient(to top, rgba(97, 92, 255, 0.5) 40%, transparent 40%);
+  display: inline-block;
+  line-height: 1;
 }
 @media screen and (max-width: 575.98px) {
   .banner h1 {
@@ -734,9 +779,13 @@ p {
   }
 }
 .banner p {
-  font-size: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0b2471;
+  line-height: 1.2;
   margin: 0;
   max-width: 440px;
+  padding-bottom: 16px;
 }
 @media screen and (max-width: 575.98px) {
   .banner p {
@@ -765,6 +814,13 @@ p {
   position: absolute;
   left: 0;
   top: 0;
+}
+.accordion h2 span {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, rgb(255, 222, 46)), color-stop(40%, transparent));
+  background: -o-linear-gradient(bottom, rgb(255, 222, 46) 40%, transparent 40%);
+  background: linear-gradient(to top, rgb(255, 222, 46) 40%, transparent 40%);
+  display: inline-block;
+  line-height: 1;
 }
 .accordion__faq {
   margin-bottom: 30px;
@@ -809,7 +865,7 @@ p {
 .case {
   color: rgb(11, 36, 113);
   text-align: center;
-  padding-top: 50px;
+  padding: 50px 0;
 }
 .case h2 {
   font-size: 42px;
@@ -817,16 +873,21 @@ p {
   line-height: 1.1;
   position: relative;
   z-index: 3;
+  margin-bottom: 10px;
 }
-.case h2:after {
-  background-color: rgb(255, 222, 46);
-  content: "";
-  height: 12px;
-  display: block;
-  width: 242px;
-  margin: 0 auto;
-  position: absolute;
-  z-index: 2;
+.case h2 span {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, rgb(255, 222, 46)), color-stop(40%, transparent));
+  background: -o-linear-gradient(bottom, rgb(255, 222, 46) 40%, transparent 40%);
+  background: linear-gradient(to top, rgb(255, 222, 46) 40%, transparent 40%);
+  display: inline-block;
+  line-height: 1;
+}
+.case__description {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(11, 36, 113);
+  line-height: 1.2;
+  margin-bottom: 40px;
 }
 .case__three {
   display: -webkit-box;
@@ -837,6 +898,23 @@ p {
 }
 .case__three-item {
   width: 33%;
+}
+.case__three-item-description {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(131, 133, 133, 0.1) 0px 4px 4px 0px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  padding: 24px;
+  opacity: 1;
+  align-self: center;
+  min-width: 268px;
+  max-width: 268px;
+  order: 3;
+  min-height: 115px;
+  max-height: 300px;
+  color: rgb(11, 36, 113);
+  position: relative;
+  margin: -57px auto 0 auto;
 }
 .case__three-item-image img {
   border-radius: 20px;
@@ -853,6 +931,13 @@ p {
   line-height: 1.3;
   text-align: center;
 }
+.leftphoto h2 span {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, rgb(255, 222, 46)), color-stop(40%, transparent));
+  background: -o-linear-gradient(bottom, rgb(255, 222, 46) 40%, transparent 40%);
+  background: linear-gradient(to top, rgb(255, 222, 46) 40%, transparent 40%);
+  display: inline-block;
+  line-height: 1;
+}
 .leftphoto__inner {
   display: -webkit-box;
   display: -webkit-flex;
@@ -867,6 +952,13 @@ p {
   font-size: 36px;
   font-weight: 600;
   line-height: 1.3;
+}
+.leftphoto__inner-left h3 span, .leftphoto__inner-right h3 span {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, rgb(255, 222, 46)), color-stop(40%, transparent));
+  background: -o-linear-gradient(bottom, rgb(255, 222, 46) 40%, transparent 40%);
+  background: linear-gradient(to top, rgb(255, 222, 46) 40%, transparent 40%);
+  display: inline-block;
+  line-height: 1;
 }
 .leftphoto__inner-left {
   margin-right: 20px;
@@ -918,6 +1010,13 @@ p {
   font-weight: 600;
   line-height: 1.3;
 }
+.rightphoto__inner-left h3 span, .rightphoto__inner-right h3 span {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, rgb(255, 222, 46)), color-stop(40%, transparent));
+  background: -o-linear-gradient(bottom, rgb(255, 222, 46) 40%, transparent 40%);
+  background: linear-gradient(to top, rgb(255, 222, 46) 40%, transparent 40%);
+  display: inline-block;
+  line-height: 1;
+}
 .rightphoto__inner-right {
   margin-right: 20px;
   text-align: center;
@@ -938,8 +1037,17 @@ p {
   line-height: 1.3;
 }
 .rightphoto__inner-left-description li {
-  list-style-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.9497 15.1212C16.3974 15.1212 15.9497 14.6735 15.9497 14.1212L15.9497 9.46437L7.75728 17.6568C7.36675 18.0473 6.73359 18.0473 6.34306 17.6568C5.95254 17.2662 5.95254 16.6331 6.34306 16.2425L14.5355 8.05016L9.8786 8.05016C9.32631 8.05016 8.8786 7.60245 8.8786 7.05016C8.8786 6.49788 9.32631 6.05016 9.8786 6.05016L16.9497 6.05016C17.2149 6.05016 17.4692 6.15552 17.6568 6.34305C17.8443 6.53059 17.9497 6.78494 17.9497 7.05016L17.9497 14.1212C17.9497 14.6735 17.502 15.1212 16.9497 15.1212Z' fill='%23615CFF'/%3E%3C/svg%3E");
+  list-style-image: none;
   padding-bottom: 24px;
+  vertical-align: middle;
+}
+.rightphoto__inner-left-description li::marker {
+  content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.9497 15.1212C16.3974 15.1212 15.9497 14.6735 15.9497 14.1212L15.9497 9.46437L7.75728 17.6568C7.36675 18.0473 6.73359 18.0473 6.34306 17.6568C5.95254 17.2662 5.95254 16.6331 6.34306 16.2425L14.5355 8.05016L9.8786 8.05016C9.32631 8.05016 8.8786 7.60245 8.8786 7.05016C8.8786 6.49788 9.32631 6.05016 9.8786 6.05016L16.9497 6.05016C17.2149 6.05016 17.4692 6.15552 17.6568 6.34305C17.8443 6.53059 17.9497 6.78494 17.9497 7.05016L17.9497 14.1212C17.9497 14.6735 17.502 15.1212 16.9497 15.1212Z' fill='%23615CFF'/%3E%3C/svg%3E");
+  width: 24px;
+  height: 24px;
+}
+.rightphoto__inner-left-description li img {
+  margin-top: 3px;
 }
 
 .blackleft {

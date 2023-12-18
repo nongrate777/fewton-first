@@ -16,6 +16,11 @@
     position: absolute;
     left: 0;
     top: 0;
+    span {
+      background: linear-gradient(to top, rgb(255, 222, 46) 40%, transparent 40%);
+      display: inline-block;
+      line-height: 1;
+    }
   }
   &__faq {
 

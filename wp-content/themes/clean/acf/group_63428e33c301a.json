@@ -6,6 +6,7 @@
             "key": "field_63428e349991d",
             "label": "Image",
             "name": "image",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -30,6 +31,7 @@
             "key": "field_63428e4a9991e",
             "label": "Title",
             "name": "title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -49,6 +51,67 @@
             "key": "field_63428e509991f",
             "label": "Description",
             "name": "description",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65805865bfceb",
+            "label": "Button",
+            "name": "button",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65805a351d7e9",
+            "label": "Left desc",
+            "name": "left_desc",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65805a3e1d7ea",
+            "label": "Right desc",
+            "name": "right_desc",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -83,5 +146,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1665306202
+    "modified": 1702910540
 }

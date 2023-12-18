@@ -87,6 +87,25 @@ p {
         margin: 0 18px 0 auto;
     }
 }
+.light__button{
+    font-size: 18px;
+    font-weight: 500;
+    color: #4f4aff;
+    text-align: center;
+    letter-spacing: .5px;
+    line-height: 1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #4f4aff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    opacity: 1;
+    cursor: pointer;
+    text-decoration: none;
+    a{
+        text-decoration: none;
+    }
+}
 .button-center{
     margin: 0 auto;
 }
