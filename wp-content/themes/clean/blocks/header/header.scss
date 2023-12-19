@@ -1,10 +1,11 @@
 .header {
-  padding: 20px 0;
+  padding: 10px 0;
   background-color: rgb(245, 245, 245);
   .container {
     display: flex;
     align-items: center;
     justify-content: end;
+    padding: 0;
     gap: 20px;
     position: relative;
     @include media768 {
@@ -15,7 +16,7 @@
   &__logo {
     display: flex;
     position: absolute;
-    left: 15px;
+    left: 0;
     span{
       font-size: 31px;
       font-weight: 700;
@@ -58,7 +59,7 @@
     }
 
     li {
-      margin: 0 15px;
+      margin: 0 17px;
       list-style: none;
 
       @include media768 {

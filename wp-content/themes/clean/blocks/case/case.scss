@@ -33,6 +33,10 @@
     &-item {
       width: 33%;
 
+      a {
+        text-decoration: none;
+      }
+
       &-description {
         background-color: rgb(255, 255, 255);
         box-shadow: rgba(131, 133, 133, 0.1) 0px 4px 4px 0px;

@@ -93,6 +93,13 @@ define('LOGGED_IN_SALT',   'UNHyqj07pcgN4dZ8V/nOEsY1mVPyKgXb8DVMOdpTpYul3WzC++5g
 define('NONCE_SALT',       'J8kVIoHTbYSUUM+ByLoTCnc2qUihxx8DBGs/julDay2JVaeeYkKnTRuoSuclT3EX3unS84eBGiGImTaW1EZEhg==');
 define( 'WP_ENVIRONMENT_TYPE', 'local' );
 define( 'ACF_PRO_LICENSE', 'YzM1NjI5NDE3ODE5YTlkNDQ2NTczOGJlZDM1MTdmZWExZjRmMDUwNWQ3ODk5OTNiODA5MmQy');
+define( 'FORCE_SSL_ADMIN', true );
+define( 'FORCE_SSL_LOGIN', false );
+define( 'ALLOW_UNFILTERED_UPLOADS', true );
+define( 'ASSETS_VERSION', time() );
+
+define( 'WPMS_ON', true);
+define( 'WPMS_SMTP_PASS', '63vBfMz02SlO37Oz' );
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */

@@ -6,6 +6,7 @@
             "key": "field_65770c1e33590",
             "label": "Title",
             "name": "title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -25,6 +26,7 @@
             "key": "field_65770c2c33591",
             "label": "Description",
             "name": "description",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -44,6 +46,7 @@
             "key": "field_65770c4033592",
             "label": "image1",
             "name": "image1",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -68,6 +71,7 @@
             "key": "field_65770c5133593",
             "label": "Image2",
             "name": "image2",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -92,6 +96,7 @@
             "key": "field_65770c6033594",
             "label": "Image3",
             "name": "image3",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -116,6 +121,7 @@
             "key": "field_65771411d1664",
             "label": "Description1",
             "name": "description1",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -135,6 +141,7 @@
             "key": "field_6577142ad1665",
             "label": "Description2",
             "name": "description2",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -154,6 +161,7 @@
             "key": "field_6577143bd1666",
             "label": "Description3",
             "name": "description3",
+            "aria-label": "",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -168,6 +176,66 @@
             "rows": "",
             "placeholder": "",
             "new_lines": ""
+        },
+        {
+            "key": "field_65820707c4bae",
+            "label": "Link1",
+            "name": "link1",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65820714c4baf",
+            "label": "Link2",
+            "name": "link2",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6582071bc4bb0",
+            "label": "Link3",
+            "name": "link3",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -188,5 +256,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1702302799
+    "modified": 1703020324
 }

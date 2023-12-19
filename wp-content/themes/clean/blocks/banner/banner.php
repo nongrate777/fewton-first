@@ -1,13 +1,13 @@
 <?php
 $fields = get_fields();
-$banner_style = !empty($fields['image']) ? ' style="background-size: 520px; background-position: 83% 50%; background-image: url(' . $fields['image']['url'] . ')"' : '';
+$banner_style = !empty($fields['image']) ? ' style="background-size: 636px; background-size: contain; background-position: 100% 50%; background-image: url(' . $fields['image']['url'] . ')"' : '';
 $fields_button = $fields['button'];
 $left_desc = $fields['left_desc'];
 $right_desc = $fields['right_desc'];
 ?>
 
-<section class="banner"<?php echo $banner_style; ?>>
-    <div class="container">
+<section class="banner">
+    <div class="container"<?php echo $banner_style; ?>>
         <?php if (!empty($fields['title'])) { ?>
             <h1><?php echo wp_kses_post($fields['title']); ?></h1>
         <?php }
@@ -16,7 +16,7 @@ $right_desc = $fields['right_desc'];
             <p><?php echo wp_kses_post($fields['description']); ?></p>
         <?php }
         if (!empty($fields_button)) { ?>
-            <a href="/app?view=SignUp" class="blue__button"><?php echo $fields_button; ?></a>
+            <a href="/app?view=SignUp" class="blue__button arrow-banner"><?php echo $fields_button; ?></a>
         <?php } ?>
         <div class="banner__inner">
             <div class="banner__inner-item">

@@ -1,18 +1,27 @@
 .banner {
-  padding: 100px 0;
+  padding: 90px 0;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $background;
+
+  .container {
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 100px 0;
+
+  }
 
   &__inner {
     display: flex;
     flex-wrap: wrap;
     max-width: 440px;
     padding-top: 80px;
+    gap: 40px;
 
     &-item {
       width: 50%;
+      max-width: 200px;
     }
   }
 
@@ -21,14 +30,17 @@
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 48px;
+    font-weight: 600;
     margin: 0 0 40px;
     color: $default;
+
     span {
       background: linear-gradient(to top, rgba(97, 92, 255, 0.5) 40%, transparent 40%);
       display: inline-block;
       line-height: 1;
     }
+
     @include media576 {
       font-size: 30px;
     }
@@ -45,5 +57,15 @@
     @include media576 {
       font-size: 18px;
     }
+  }
+}
+.arrow-banner{
+  padding-right: 50px;
+  &:after{
+    content: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.7715 13.7812L14.0273 10.5L10.7715 7.21875M13.5749 10.5H6.97266' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.5 18.375C14.8477 18.375 18.375 14.8477 18.375 10.5C18.375 6.15234 14.8477 2.625 10.5 2.625C6.15234 2.625 2.625 6.15234 2.625 10.5C2.625 14.8477 6.15234 18.375 10.5 18.375Z' stroke='white' stroke-miterlimit='10'/%3E%3C/svg%3E");
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    margin-left: 10px;
   }
 }
