@@ -8,6 +8,7 @@ $fields_title_left = $fields['title_left'];
 $fields_desc_left = $fields['description_left'];
 $fields_photo_right = $fields['image_right'];
 $fields_button = $fields['button'];
+
 ?>
 <section class="rightphoto">
     <div class="container">

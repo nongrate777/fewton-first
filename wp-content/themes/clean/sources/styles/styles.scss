@@ -7,8 +7,12 @@
 @import "blocks/container";
 @import "blocks/content";
 @import "blocks/breadcrumbs";
+@import "blocks/case-page";
+@import "blocks/policy-page";
+@import "blocks/new-page";
 
 @import "../../blocks/header/header";
+@import "../../blocks/headerinner/headerinner";
 @import "../../blocks/footer/footer";
 
 @import "../../blocks/banner/banner";
@@ -21,3 +25,5 @@
 @import "../../blocks/fiolet/fiolet";
 @import "../../blocks/blackright/blackright";
 @import "../../blocks/tabs/tabs";
+@import "../../blocks/photos/photos";
+@import "../../blocks/grey/grey";

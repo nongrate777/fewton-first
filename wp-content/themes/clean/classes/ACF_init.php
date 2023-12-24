@@ -56,7 +56,10 @@ class ACF_init
             'arrow' => 'Arrow Up',
             'fiolet' => 'Fiolet Block',
             'blackright' => 'Black right text Block',
-            'tabs' => 'Tabs Block'
+            'tabs' => 'Tabs Block',
+            'photos' => 'Four photos Block',
+            'grey' => 'Three column grey Block'
+
         );
 
         foreach ($blocks as $id => $name) {

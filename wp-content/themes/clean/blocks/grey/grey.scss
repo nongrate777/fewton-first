@@ -1,0 +1,36 @@
+.grey {
+  padding: 20px 0;
+  .container{
+    width: 1444px;
+    padding: 0;
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &-item {
+      width: calc(33% - 10px);
+      padding: 24px 70px;
+      border-radius: 20px;
+      background-color: #D9D8FF;
+      &-title{
+        color: #505050;
+        font-family: 'Outfit', sans-serif;
+        padding-bottom: 24px;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 92%;
+      }
+      &-desc{
+        color: #505050;
+        font-family: 'Outfit', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 100%;
+      }
+    }
+  }
+}

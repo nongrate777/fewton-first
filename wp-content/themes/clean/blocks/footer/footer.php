@@ -15,12 +15,12 @@ $fields = get_field('footer', 'options');
             <?php } ?>
             <?php if (!empty($fields['footer_menu2']) && !empty($fields['footer_menu_link2'])) { ?>
                 <div class="footer__menu-item">
-                    <a href="<?php echo $fields['footer_menu_link2'] ?>"><?php echo $fields['footer_menu2'] ?></a>
+                    <a href="<?php echo $fields['footer_menu_link2'] ?>" target="_blank"><?php echo $fields['footer_menu2'] ?></a>
                 </div>
             <?php } ?>
             <?php if (!empty($fields['footer_menu3']) && !empty($fields['footer_menu_link3'])) { ?>
                 <div class="footer__menu-item">
-                    <a href="<?php echo $fields['footer_menu_link3'] ?>"><?php echo $fields['footer_menu3'] ?></a>
+                    <a href="<?php echo $fields['footer_menu_link3'] ?>" target="_blank"><?php echo $fields['footer_menu3'] ?></a>
                 </div>
             <?php } ?>
             <?php if (!empty($fields['footer_menu4']) && !empty($fields['footer_menu_link4'])) { ?>

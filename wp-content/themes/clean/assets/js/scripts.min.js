@@ -163,6 +163,30 @@ if (header__burger) {
 
 /***/ }),
 
+/***/ "./blocks/headerinner/headerinner.js":
+/*!*******************************************!*\
+  !*** ./blocks/headerinner/headerinner.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var header__burger = document.querySelector('.header__burger');
+var header__menu = document.querySelector('.header__menu');
+
+if (header__burger) {
+  header__burger.addEventListener('click', function () {
+    if (header__burger.classList.contains('header__burger_active')) {
+      header__burger.classList.remove('header__burger_active');
+      header__menu.classList.remove('header__menu_active');
+    } else {
+      header__burger.classList.add('header__burger_active');
+      header__menu.classList.add('header__menu_active');
+    }
+  });
+}
+
+/***/ }),
+
 /***/ "./blocks/tabs/tabs.js":
 /*!*****************************!*\
   !*** ./blocks/tabs/tabs.js ***!
@@ -300,13 +324,16 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../blocks/header/header */ "./blocks/header/header.js");
 /* harmony import */ var _blocks_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_blocks_header_header__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _blocks_accordion_accordion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../blocks/accordion/accordion */ "./blocks/accordion/accordion.js");
-/* harmony import */ var _blocks_arrow_arrow__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../blocks/arrow/arrow */ "./blocks/arrow/arrow.js");
-/* harmony import */ var _blocks_arrow_arrow__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_blocks_arrow_arrow__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _blocks_tabs_tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../blocks/tabs/tabs */ "./blocks/tabs/tabs.js");
-/* harmony import */ var _blocks_tabs_tabs__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_blocks_tabs_tabs__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../sources/js/functions/smooth-scroll */ "./sources/js/functions/smooth-scroll.js");
-/* harmony import */ var _sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _blocks_headerinner_headerinner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../blocks/headerinner/headerinner */ "./blocks/headerinner/headerinner.js");
+/* harmony import */ var _blocks_headerinner_headerinner__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_blocks_headerinner_headerinner__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _blocks_accordion_accordion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../blocks/accordion/accordion */ "./blocks/accordion/accordion.js");
+/* harmony import */ var _blocks_arrow_arrow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../blocks/arrow/arrow */ "./blocks/arrow/arrow.js");
+/* harmony import */ var _blocks_arrow_arrow__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_blocks_arrow_arrow__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _blocks_tabs_tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../blocks/tabs/tabs */ "./blocks/tabs/tabs.js");
+/* harmony import */ var _blocks_tabs_tabs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_blocks_tabs_tabs__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../sources/js/functions/smooth-scroll */ "./sources/js/functions/smooth-scroll.js");
+/* harmony import */ var _sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
