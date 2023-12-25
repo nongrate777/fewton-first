@@ -1,8 +1,9 @@
 <?php
 $fields = get_fields();
+$fields_style = $fields['style'];
 ?>
 
-<section class="accordion" id="faq">
+<section class="accordion <?php if (!empty($fields_style)) { echo $fields_style; }?>" id="faq">
     <div class="container">
         <?php if (!empty($fields['title'])) { ?>
             <h2><?php echo wp_kses_post($fields['title']); ?></h2>

@@ -6,6 +6,7 @@
             "key": "field_63429a9bb6216",
             "label": "Title",
             "name": "title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -25,6 +26,7 @@
             "key": "field_63429a4c9ece3",
             "label": "FAQ",
             "name": "accordion",
+            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -46,6 +48,7 @@
                     "key": "field_63429a5e9ece4",
                     "label": "Question",
                     "name": "question",
+                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -66,6 +69,7 @@
                     "key": "field_63429a699ece5",
                     "label": "Answer",
                     "name": "answer",
+                    "aria-label": "",
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
@@ -83,6 +87,26 @@
                     "parent_repeater": "field_63429a4c9ece3"
                 }
             ]
+        },
+        {
+            "key": "field_65885581393b9",
+            "label": "Style",
+            "name": "style",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -103,5 +127,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1665310330
+    "modified": 1703433611
 }

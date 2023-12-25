@@ -58,7 +58,11 @@ class ACF_init
             'blackright' => 'Black right text Block',
             'tabs' => 'Tabs Block',
             'photos' => 'Four photos Block',
-            'grey' => 'Three column grey Block'
+            'grey' => 'Three column grey Block',
+            'rose' => 'Rose Block',
+            'casein' => 'Case inner page Block',
+            'newbanner' => 'New banner Block',
+            'innertabs' => 'Tabs for inner page'
 
         );
 
