@@ -170,17 +170,17 @@ if (header__burger) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var header__burger = document.querySelector('.header__burger');
-var header__menu = document.querySelector('.header__menu');
+var header__burger = document.querySelector('.headerinner__burger');
+var header__menu = document.querySelector('.headerinner__menu');
 
 if (header__burger) {
   header__burger.addEventListener('click', function () {
-    if (header__burger.classList.contains('header__burger_active')) {
-      header__burger.classList.remove('header__burger_active');
-      header__menu.classList.remove('header__menu_active');
+    if (header__burger.classList.contains('headerinner__burger_active')) {
+      header__burger.classList.remove('headerinner__burger_active');
+      header__menu.classList.remove('headerinner__menu_active');
     } else {
-      header__burger.classList.add('header__burger_active');
-      header__menu.classList.add('header__menu_active');
+      header__burger.classList.add('headerinner__burger_active');
+      header__menu.classList.add('headerinner__menu_active');
     }
   });
 }
@@ -215,31 +215,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /***/ }),
 
-/***/ "./blocks/tabs/tabs.js":
-/*!*****************************!*\
-  !*** ./blocks/tabs/tabs.js ***!
-  \*****************************/
+/***/ "./sources/js/functions/calculator.js":
+/*!********************************************!*\
+  !*** ./sources/js/functions/calculator.js ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-document.addEventListener('DOMContentLoaded', function () {
-  var tabButtons = document.querySelectorAll('.tabs__inner-tabs-button');
-  var tabContents = document.querySelectorAll('.tabs__inner-tabs-content');
-  tabButtons.forEach(function (button) {
-    button.addEventListener('click', function () {
-      var tabNumber = button.getAttribute('data-tab');
-      tabButtons.forEach(function (btn) {
-        btn.classList.remove('active');
-      });
-      tabContents.forEach(function (content) {
-        content.classList.remove('active');
-      });
-      button.classList.add('active');
-      document.getElementById('tab-' + tabNumber).classList.add('active');
-    });
-  });
-  tabButtons[0].click();
-});
+
 
 /***/ }),
 
@@ -357,12 +340,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_accordion_accordion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../blocks/accordion/accordion */ "./blocks/accordion/accordion.js");
 /* harmony import */ var _blocks_arrow_arrow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../blocks/arrow/arrow */ "./blocks/arrow/arrow.js");
 /* harmony import */ var _blocks_arrow_arrow__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_blocks_arrow_arrow__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _blocks_tabs_tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../blocks/tabs/tabs */ "./blocks/tabs/tabs.js");
-/* harmony import */ var _blocks_tabs_tabs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_blocks_tabs_tabs__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _blocks_innertabs_innertabs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../blocks/innertabs/innertabs */ "./blocks/innertabs/innertabs.js");
-/* harmony import */ var _blocks_innertabs_innertabs__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_blocks_innertabs_innertabs__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../sources/js/functions/smooth-scroll */ "./sources/js/functions/smooth-scroll.js");
-/* harmony import */ var _sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _blocks_innertabs_innertabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../blocks/innertabs/innertabs */ "./blocks/innertabs/innertabs.js");
+/* harmony import */ var _blocks_innertabs_innertabs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_blocks_innertabs_innertabs__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../sources/js/functions/smooth-scroll */ "./sources/js/functions/smooth-scroll.js");
+/* harmony import */ var _sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_sources_js_functions_smooth_scroll__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _sources_js_functions_calculator__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../sources/js/functions/calculator */ "./sources/js/functions/calculator.js");
+/* harmony import */ var _sources_js_functions_calculator__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_sources_js_functions_calculator__WEBPACK_IMPORTED_MODULE_6__);
 
 
 

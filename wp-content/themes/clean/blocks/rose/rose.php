@@ -18,7 +18,7 @@ $fields_button = $fields['button'];
             <div class="rose__description"><?php echo wp_kses_post($fields_desc); ?></div>
         <?php }
         if (!empty($fields_button)) { ?>
-            <a href="/app?view=SignUp" class="white__button button-center"><?php echo $fields_button; ?></a>
+            <a href="/app?view=SignUp" class="white__button_new arrow-banner button-center"><?php echo $fields_button; ?></a>
         <?php } ?>
     </div>
 </section>

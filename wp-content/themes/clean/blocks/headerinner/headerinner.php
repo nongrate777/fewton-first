@@ -18,15 +18,22 @@ $fields = get_field('header', 'options');
         <?php
         wp_nav_menu(array(
             'menu' => 'main_menu',
-            'menu_class' => 'header__menu',
+            'menu_class' => 'headerinner__menu',
             'container' => false,
             'walker' => new Walker_Menu
         ));
         if (!empty($fields['button_first'])) { ?>
-            <a href="/app?view=Login" class="light__button"><?php echo $fields['button_first']; ?></a>
+            <a href="/app?view=Login" class="light__button new_style">
+                <?php echo $fields['button_first']; ?>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.5 12C15.2614 12 17.5 9.76142 17.5 7C17.5 4.23858 15.2614 2 12.5 2C9.73858 2 7.5 4.23858 7.5 7C7.5 9.76142 9.73858 12 12.5 12Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.0899 22C21.0899 18.13 17.2399 15 12.4999 15C7.75991 15 3.90991 18.13 3.90991 22" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+            </a>
         <?php }
         if (!empty($fields['button'])) { ?>
-            <a href="/app?view=SignUp" class="header__button"><?php echo $fields['button']; ?></a>
+            <a href="/app?view=SignUp" class="header__button new_blue"><?php echo $fields['button']; ?></a>
         <?php } ?>
         <div class="headerinner__burger">
             <span></span>

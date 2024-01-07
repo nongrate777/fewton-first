@@ -14,6 +14,7 @@ $fields_desc3 = $fields['description3'];
 $fields_link1 = $fields['link1'];
 $fields_link2 = $fields['link2'];
 $fields_link3 = $fields['link3'];
+$fields_button = $fields['button'];
 ?>
 <section class="casein">
     <div class="container">
@@ -78,5 +79,8 @@ $fields_link3 = $fields['link3'];
                 ?>
             </div>
         </div>
+        <?php if (!empty($fields_button)) { ?>
+            <a href="/app?view=SignUp" class="blue__button_new arrow-banner-light button-center none_mobile"><?php echo $fields_button; ?></a>
+        <?php } ?>
     </div>
 </section>

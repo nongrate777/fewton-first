@@ -56,3 +56,18 @@ $fields_title = $fields['title'];
     </div>
 </section>
 
+<script>
+    function toggleAnswer(questionElement) {
+
+        var answerElement = questionElement.nextElementSibling;
+
+
+        if (answerElement.style.maxHeight) {
+            answerElement.style.maxHeight = null;
+            questionElement.parentElement.classList.remove("active-block");
+        } else {
+            answerElement.style.maxHeight = answerElement.scrollHeight + "px";
+            questionElement.parentElement.classList.add("active-block");
+        }
+    }
+</script>

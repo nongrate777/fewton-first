@@ -2,12 +2,14 @@
   padding: 100px 0 70px;
   background-color: rgb(245, 245, 245);
   @include media576 {
-    padding: 50px 0 20px;
+    padding: 24px 0;
   }
-  .container{
+
+  .container {
     position: relative;
   }
-  h2{
+
+  h2 {
     font-size: 36px;
     font-weight: 600;
     color: $default;
@@ -16,17 +18,28 @@
     position: absolute;
     left: 0;
     top: 0;
+    @include media576 {
+      position: relative;
+      max-width: 100%;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 80%;
+    }
+
     span {
       background: linear-gradient(to top, rgb(255, 222, 46) 40%, transparent 40%);
       display: inline-block;
       line-height: 1;
     }
   }
+
   &__faq {
-
-
     margin-bottom: 30px;
     margin-left: 50%;
+    @include media576 {
+      margin: 0;
+    }
 
   }
 
@@ -38,6 +51,9 @@
     cursor: pointer;
     transition: 0.3s;
     font-size: 18px;
+    @include media576 {
+      padding: 15px 0;
+    }
 
     &:hover {
       color: rgb(97, 92, 255);;
@@ -55,6 +71,10 @@
       background-repeat: no-repeat;
       background-size: contain;
       transition: .3s;
+      @include media576 {
+        right: 0;
+        width: 14px;
+      }
     }
 
     &_active {
@@ -73,11 +93,66 @@
   }
 }
 
-.new{
+.new {
   background-color: $white;
   font-family: 'Outfit', sans-serif;
-  .container{
+
+  &__question {
+    color: #505050;
+    @include media576 {
+      color: #505050;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%;
+    }
+  }
+
+  .container {
     width: 1444px;
     padding: 0;
+    @include media576 {
+      width: 100%;
+      padding: 0 25px;
+    }
+  }
+
+  h2 {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80%;
+    font-family: 'Outfit', sans-serif;
+    color: $white;
+    @include media576 {
+      position: inherit;
+      text-align: center;
+      max-width: 100%;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 80%;
+      background: $rose;
+      width: fit-content;
+      border-radius: 40px;
+      padding: 0 2px;
+      color: $white;
+      display: block;
+      margin: 0 auto;
+    }
+
+    span {
+      display: block;
+      background: $rose;
+      width: fit-content;
+      border-radius: 40px;
+      margin: 0;
+      padding: 0 2px;
+      color: $white;
+      @include media576 {
+        display: inline;
+        background: none;
+      }
+    }
   }
 }

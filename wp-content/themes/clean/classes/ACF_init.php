@@ -62,7 +62,8 @@ class ACF_init
             'rose' => 'Rose Block',
             'casein' => 'Case inner page Block',
             'newbanner' => 'New banner Block',
-            'innertabs' => 'Tabs for inner page'
+            'innertabs' => 'Tabs for inner page',
+            'two' => 'Two column for mobile'
 
         );
 

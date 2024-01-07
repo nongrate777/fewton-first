@@ -1,6 +1,10 @@
 .headerinner {
   padding: 10px 0;
   background-color: $rose;
+  font-family: 'Outfit', sans-serif;
+  @include media576 {
+    padding: 4px 0;
+  }
 
   .container {
     display: flex;
@@ -11,7 +15,17 @@
     gap: 20px;
     position: relative;
     @include media768 {
-      justify-content: flex-start;
+
+      width: 100%;
+      padding: 0 25px;
+    }
+    @include media992 {
+      width: 100%;
+      padding: 0 25px;
+    }
+    @include media576 {
+      width: 100%;
+      padding: 0 25px;
     }
   }
 
@@ -19,17 +33,30 @@
     display: flex;
     position: absolute;
     left: 0;
-    span{
+    @include media576 {
+      left: 25px;
+      z-index: 9;
+    }
+
+    span {
       font-size: 31px;
       font-weight: 700;
-      color: rgba(97,92,255,1);
+      color: rgba(97, 92, 255, 1);
       margin-left: 8px;
+      @include media576 {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 11.4px;
+        margin-left: 2px;
+      }
     }
+
     img {
       max-width: 160px;
 
       @include media576 {
-        max-width: 100px;
+        max-width: 11px;
       }
     }
   }
@@ -39,7 +66,7 @@
     align-items: center;
     padding: 0;
     margin: 0;
-
+    font-family: 'Outfit', sans-serif;
     @include media768 {
       position: absolute;
       z-index: 500;
@@ -54,9 +81,11 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, .1);
       transform: translateX(calc(100% + 10px));
       transition: .3s;
+      display: none;
 
       &_active {
         transform: translateX(0);
+        display: block;
       }
     }
 
@@ -70,15 +99,16 @@
     }
 
     a {
-      font-size: 16px;
       font-weight: 500;
-      color: rgba(11, 36, 113, 1);
-      line-height: 1.4;
+      color: $white;
       text-decoration: none;
       transition: .3s;
+      font-size: 18px;
+      font-style: normal;
+      line-height: normal;
 
       &:hover {
-        color: rgba(97,92,255,1);
+        color: rgba(97, 92, 255, 1);
       }
 
       &.current {
@@ -103,6 +133,7 @@
     font-size: 18px;
     font-weight: 400;
     padding: 10px 30px;
+    font-family: 'Outfit', sans-serif;
 
     &:hover {
       background: rgba(97, 92, 255, 0.95);
@@ -121,6 +152,7 @@
     cursor: pointer;
     z-index: 700;
 
+
     @include media768 {
       display: block;
     }
@@ -132,7 +164,7 @@
       display: block;
       width: 20px;
       height: 2px;
-      background-color: $textDark;
+      background-color: $white;
       transition: .3s;
 
       &:nth-child(1) {
@@ -162,6 +194,37 @@
           transform: translate(-50%, -50%) rotate(-45deg);
         }
       }
+    }
+  }
+
+  .new_style {
+    border-radius: 34px;
+    border: 1px solid #F0F0F6;
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+    color: $white;
+    font-size: 0px;
+    letter-spacing: 0;
+    padding: 10px 30px;
+    font-family: 'Outfit', sans-serif;
+    @include media576 {
+      display: none;
+    }
+  }
+
+  .new_blue {
+    border-radius: 34px;
+    background: #817DFF;
+    box-shadow: -2px 3px 4px 0px rgba(0, 0, 0, 0.08);
+    padding: 13px 30px;
+    border: 1px solid #817DFF;
+    letter-spacing: 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-family: 'Outfit', sans-serif;
+    @include media576 {
+      display: none;
     }
   }
 }

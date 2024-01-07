@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-11-28 10:13:38+0000\n"
+"PO-Revision-Date: 2023-12-20 11:43:54+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,16 @@ msgstr ""
 "X-Generator: GlotPress/4.0.0-alpha.11\n"
 "Language: ru\n"
 "Project-Id-Version: Plugins - Yoast SEO - Stable (latest release)\n"
+
+#. translators: 1: Yoast SEO, 2: Link start tag to the Learn more link, 3: Link
+#. closing tag.
+#: src/presenters/admin/woocommerce-beta-editor-presenter.php:53
+msgid "The %1$s interface is currently unavailable in the beta WooCommerce product editor. To resolve any issues, please disable the beta editor. %2$sLearn how to disable the beta WooCommerce product editor.%3$s"
+msgstr "Интерфейс %1$s на данный момент недоступен в бета-версии редактора товаров WooCommerce. Чтобы решить эти проблемы, пожалуйста, отключите бета-версию редактора. %2$sУзнайте, как отключить бета-версию редактора товаров WooCommerce.%3$s"
+
+#: src/presenters/admin/woocommerce-beta-editor-presenter.php:50
+msgid "Compatibility issue: Yoast SEO is incompatible with the beta WooCommerce product editor."
+msgstr "Проблема совместимости: Yoast SEO несовместим с бета-версией редактора товаров WooCommerce."
 
 #: src/presenters/admin/sidebar-presenter.php:63 js/dist/elementor.js:101
 #: js/dist/introductions.js:9 js/dist/new-settings.js:9 js/dist/post-edit.js:9
@@ -39,6 +49,19 @@ msgstr "-30%"
 msgid "%1$s Now with 30%% Black Friday Discount!"
 msgstr "%1$s Теперь со скидкой 30%% в Черную пятницу!"
 
+#. translators: %s expands to Yoast SEO Premium
+#: admin/class-premium-upsell-admin-block.php:71
+#: src/presenters/admin/sidebar-presenter.php:80 js/dist/elementor.js:103
+#: js/dist/introductions.js:11 js/dist/new-settings.js:11
+#: js/dist/new-settings.js:327 js/dist/post-edit.js:11 js/dist/support.js:21
+msgid "Claim your 30% off now!"
+msgstr "Получите свою скидку 30% сейчас!"
+
+#. translators: %1$s expands to opening span, %2$s expands to closing span
+#: admin/views/licenses.php:137
+msgid "%1$sSALE 30%% OFF!%2$s"
+msgstr "%1$sРАСПРОДАЖА 30%% СКИДКА!%2$s"
+
 #: admin/views/class-yoast-feature-toggles.php:206 js/dist/new-settings.js:27
 #: js/dist/new-settings.js:297
 msgid "AI title & description generator"
@@ -56,7 +79,7 @@ msgstr "SEO-тренировки"
 msgid "Quickly create titles & meta descriptions"
 msgstr "Быстро создавайте заголовки и метаописания"
 
-#: admin/class-premium-upsell-admin-block.php:56 js/dist/elementor.js:563
+#: admin/class-premium-upsell-admin-block.php:56 js/dist/elementor.js:565
 #: js/dist/new-settings.js:327 js/dist/post-edit.js:16
 msgid "Use AI"
 msgstr "Используйте ИИ"
@@ -150,6 +173,11 @@ msgstr "Тип записи %s не может быть проиндексиро
 msgid "Academy"
 msgstr "Академия"
 
+#. translators: %1$s is the plugin name, %2$s and %3$s are a link.
+#: inc/class-addon-manager.php:417
+msgid "%1$s can't be updated because your product subscription is expired. %2$sRenew your product subscription%3$s to get updates again and use all the features of %1$s."
+msgstr "%1$s не может быть обновлено, так как срок действия вашей подписки на продукт истек. %2$sПродлите подписку на продукт%3$s, чтобы снова получать обновления и использовать все функции %1$s."
+
 #. translators: %1$s expands to a strong tag, %2$s expands to the product name,
 #. %3$s expands to a closing strong tag, %4$s expands to an a tag. %5$s expands
 #. to MyYoast, %6$s expands to a closing a tag,  %7$s expands to the product
@@ -157,11 +185,6 @@ msgstr "Академия"
 #: inc/class-addon-manager.php:516
 msgid "%1$s %2$s isn't working as expected %3$s and you are not receiving updates or support! Make sure to %4$s activate your product subscription in %5$s%6$s to unlock all the features of %7$s."
 msgstr "%1$s %2$s не работает должным образом %3$s, и вы не получаете обновления или поддержку! Убедитесь, что %4$s активировал подписку на продукт в %5$s%6$s, чтобы разблокировать все функции %7$s."
-
-#. translators: %1$s is the plugin name, %2$s and %3$s are a link.
-#: inc/class-addon-manager.php:417
-msgid "%1$s can't be updated because your product subscription is expired. %2$sRenew your product subscription%3$s to get updates again and use all the features of %1$s."
-msgstr "%1$s не может быть обновлено, так как срок действия вашей подписки на продукт истек. %2$sПродлите подписку на продукт%3$s, чтобы снова получать обновления и использовать все функции %1$s."
 
 #: src/integrations/admin/crawl-settings-integration.php:297
 msgid "This feature is disabled when your site is not using pretty permalinks."
@@ -569,8 +592,8 @@ msgstr "Разблокировать с Премиум!"
 
 #. translators: %s expands to the post type name.
 #. Translators: %s translates to the Post type in singular form
-#: admin/metabox/class-metabox.php:207 js/dist/block-editor.js:498
-#: js/dist/classic-editor.js:498 js/dist/elementor.js:493
+#: admin/metabox/class-metabox.php:207 js/dist/block-editor.js:500
+#: js/dist/classic-editor.js:500 js/dist/elementor.js:495
 msgid "Timestamp this %s"
 msgstr "Проставить метку времени для %s"
 
@@ -1146,9 +1169,9 @@ msgstr "Предложенная ссылка"
 msgid "Find relevant data about your content right in the Insights section in the Yoast SEO metabox. You’ll see what words you use most often and if they’re a match with your keywords! "
 msgstr "Найдите соответствующие данные о вашем содержимом прямо в разделе Инсайты метабокса Yoast SEO. Вы увидите, какие слова используете чаще всего и совпадают ли они с ключевыми словами! "
 
-#: admin/views/class-yoast-feature-toggles.php:116 js/dist/block-editor.js:543
-#: js/dist/block-editor.js:573 js/dist/classic-editor.js:542
-#: js/dist/elementor.js:567 js/dist/new-settings.js:27
+#: admin/views/class-yoast-feature-toggles.php:116 js/dist/block-editor.js:545
+#: js/dist/block-editor.js:575 js/dist/classic-editor.js:544
+#: js/dist/elementor.js:569 js/dist/new-settings.js:27
 #: js/dist/new-settings.js:297
 msgid "Insights"
 msgstr "Основное содержание"
@@ -1291,7 +1314,7 @@ msgstr "Этот элемент считается неверным. WordPress �
 msgid "The post could not be found."
 msgstr "Не удалось найти запись."
 
-#: admin/class-yoast-form.php:1049 js/dist/first-time-configuration.js:23
+#: admin/class-yoast-form.php:1049 js/dist/first-time-configuration.js:19
 msgid "This feature has been disabled since subsites never send tracking data."
 msgstr "Эта возможность отключена, так как подсайты никогда не отсылают данные отслеживания."
 
@@ -1382,7 +1405,7 @@ msgid "You can speed up your site and get insight into your internal linking str
 msgstr "Вы можете ускорить свой сайт и получить представление о его внутренней структуре ссылок, позволив нам выполнить несколько оптимизаций способа хранения SEO-данных. Если у вас много содержимого, это может занять некоторое время, но поверьте нам, оно того стоит."
 
 #: src/presenters/admin/indexing-notification-presenter.php:59
-#: js/dist/first-time-configuration.js:8 js/dist/indexation.js:8
+#: js/dist/first-time-configuration.js:9 js/dist/indexation.js:8
 msgid "Start SEO data optimization"
 msgstr "Начать оптимизацию SEO-данных"
 
@@ -1759,8 +1782,8 @@ msgstr "Ваши %1$s настройки:"
 msgid "%s settings to import:"
 msgstr "%s настройки для импорта:"
 
-#: admin/metabox/class-metabox.php:433 js/dist/block-editor.js:594
-#: js/dist/elementor.js:571 js/dist/new-settings.js:22
+#: admin/metabox/class-metabox.php:433 js/dist/block-editor.js:596
+#: js/dist/elementor.js:573 js/dist/new-settings.js:22
 #: js/dist/new-settings.js:27 js/dist/new-settings.js:31
 #: js/dist/new-settings.js:56 js/dist/new-settings.js:239
 #: js/dist/structured-data-blocks.js:10
@@ -2012,9 +2035,9 @@ msgstr "Принятые исходящие ссылки"
 msgid "Outgoing internal links"
 msgstr "Исходящие внутренние ссылки"
 
-#: admin/class-meta-columns.php:119 js/dist/block-editor.js:454
-#: js/dist/classic-editor.js:454 js/dist/editor-modules.js:159
-#: js/dist/elementor.js:449 js/dist/wincher-dashboard-widget.js:71
+#: admin/class-meta-columns.php:119 js/dist/block-editor.js:456
+#: js/dist/classic-editor.js:456 js/dist/editor-modules.js:162
+#: js/dist/elementor.js:451 js/dist/wincher-dashboard-widget.js:74
 msgid "Keyphrase"
 msgstr "Ключевая фраза"
 
@@ -2131,7 +2154,7 @@ msgstr "%s - требуемый аргумент для включения ил�
 msgid "Clear Image"
 msgstr "Очистить изображение"
 
-#: admin/class-yoast-form.php:1045 js/dist/first-time-configuration.js:23
+#: admin/class-yoast-form.php:1045 js/dist/first-time-configuration.js:19
 msgid "This feature has been disabled by the network admin."
 msgstr "Эта возможность отключена администратором сети."
 
@@ -2172,10 +2195,10 @@ msgstr[2] "Есть новые уведомления."
 
 #. translators: %d expands to the number of day/days.
 #: src/integrations/blocks/structured-data-blocks.php:191
-#: js/dist/block-editor.js:206 js/dist/classic-editor.js:206
-#: js/dist/editor-modules.js:131 js/dist/elementor.js:201
+#: js/dist/block-editor.js:209 js/dist/classic-editor.js:209
+#: js/dist/editor-modules.js:134 js/dist/elementor.js:204
 #: js/dist/structured-data-blocks.js:5 js/dist/structured-data-blocks.js:8
-#: js/dist/wincher-dashboard-widget.js:39
+#: js/dist/wincher-dashboard-widget.js:42
 msgid "%d day"
 msgid_plural "%d days"
 msgstr[0] "%d день"
@@ -2412,6 +2435,11 @@ msgstr "описание (произвольная таксономия)"
 msgid "Tagline"
 msgstr "Краткое описание"
 
+#: admin/watchers/class-slug-change-watcher.php:90
+#: admin/watchers/class-slug-change-watcher.php:113
+msgid "Search engines and other websites can still send traffic to your deleted content."
+msgstr "Поисковые системы и другие сайты все еще могут генерировать трафик на удаленное содержимое."
+
 #: admin/class-bulk-editor-list-table.php:394
 msgid "Show All Content Types"
 msgstr "Показывать все типы содержимого"
@@ -2619,7 +2647,7 @@ msgid "%s integration"
 msgstr "%s интеграция"
 
 #: admin/formatter/class-metabox-formatter.php:239
-#: js/dist/editor-modules.js:189 js/dist/externals-components.js:2
+#: js/dist/editor-modules.js:192 js/dist/externals-components.js:2
 #: js/dist/externals/analysisReport.js:35
 msgid "Good results"
 msgstr "Хорошие результаты"
@@ -2681,7 +2709,7 @@ msgid "Remove highlight from the text"
 msgstr "Убрать выделение из текста"
 
 #: admin/formatter/class-metabox-formatter.php:235
-#: js/dist/editor-modules.js:189 js/dist/externals-components.js:2
+#: js/dist/editor-modules.js:192 js/dist/externals-components.js:2
 #: js/dist/externals/analysisReport.js:35
 msgid "Errors"
 msgstr "Ошибки"
@@ -2696,7 +2724,7 @@ msgid "First-time SEO configuration"
 msgstr "Первичная SEO настройка"
 
 #: admin/formatter/class-metabox-formatter.php:238
-#: js/dist/editor-modules.js:189 js/dist/externals-components.js:2
+#: js/dist/editor-modules.js:192 js/dist/externals-components.js:2
 #: js/dist/externals/analysisReport.js:35
 msgid "Considerations"
 msgstr "На рассмотрении"
@@ -2762,7 +2790,7 @@ msgstr "Обозначьте, какой контент (%1$s) является 
 #: src/integrations/admin/workouts-integration.php:211
 #: src/integrations/admin/workouts-integration.php:241
 #: src/presenters/admin/help-link-presenter.php:76 js/dist/academy.js:9
-#: js/dist/block-editor.js:593 js/dist/block-editor.js:594
+#: js/dist/block-editor.js:595 js/dist/block-editor.js:596
 #: js/dist/elementor.js:98 js/dist/elementor.js:101
 #: js/dist/externals-components.js:68 js/dist/externals/componentsNew.js:137
 #: js/dist/externals/helpers.js:19 js/dist/integrations-page.js:3
@@ -2865,7 +2893,7 @@ msgid "Cornerstone content"
 msgstr "Ключевое содержимое"
 
 #: admin/class-yoast-form.php:141 admin/class-yoast-form.php:146
-#: js/dist/first-time-configuration.js:8 js/dist/new-settings.js:12
+#: js/dist/first-time-configuration.js:9 js/dist/new-settings.js:12
 msgid "Save changes"
 msgstr "Сохранить изменения"
 
@@ -2880,10 +2908,10 @@ msgstr "Мгновенно предлагаемые внутренние ссы�
 msgid "The plugin %2$s changes your site's output and in doing that differentiates between search engines and normal users, a process that's called cloaking. We highly recommend that you disable it."
 msgstr "Плагин %2$s изменяет вид вашего сайта, так что поисковые системы и обычные пользователи видят его по-разному (это называется cloaking). Мы очень рекомендуем вам отключить его."
 
-#: admin/class-premium-popup.php:89 js/dist/block-editor.js:429
-#: js/dist/block-editor.js:494 js/dist/classic-editor.js:429
-#: js/dist/classic-editor.js:494 js/dist/elementor.js:424
-#: js/dist/elementor.js:489 js/dist/externals-components.js:2
+#: admin/class-premium-popup.php:89 js/dist/block-editor.js:431
+#: js/dist/block-editor.js:496 js/dist/classic-editor.js:431
+#: js/dist/classic-editor.js:496 js/dist/elementor.js:426
+#: js/dist/elementor.js:491 js/dist/externals-components.js:2
 #: js/dist/externals-components.js:109
 msgid "1 year free support and updates included!"
 msgstr "1 год бесплатных обновлений и улучшений включен!"
@@ -2938,7 +2966,7 @@ msgstr "%1$s, Автор в %2$s"
 msgid "Marks are disabled in current view"
 msgstr "Маhrths отключены в текущем представлении"
 
-#: inc/class-wpseo-replace-vars.php:1515 js/dist/first-time-configuration.js:12
+#: inc/class-wpseo-replace-vars.php:1515 js/dist/first-time-configuration.js:13
 msgid "Name"
 msgstr "Имя"
 
@@ -3011,14 +3039,14 @@ msgid "Gain access to our 24/7 support team"
 msgstr "Получить доступ к нашей службе поддержки 24/7"
 
 #: admin/metabox/class-metabox.php:182 admin/metabox/class-metabox.php:187
-#: js/dist/block-editor.js:498 js/dist/classic-editor.js:498
-#: js/dist/elementor.js:493
+#: js/dist/block-editor.js:500 js/dist/classic-editor.js:500
+#: js/dist/elementor.js:495
 msgid "No"
 msgstr "Нет"
 
 #: admin/metabox/class-metabox.php:181 admin/metabox/class-metabox.php:186
-#: js/dist/block-editor.js:498 js/dist/classic-editor.js:498
-#: js/dist/elementor.js:493
+#: js/dist/block-editor.js:500 js/dist/classic-editor.js:500
+#: js/dist/elementor.js:495
 msgid "Yes"
 msgstr "Да"
 
@@ -3184,14 +3212,14 @@ msgid "Removes the readability analysis section from the metabox and disables al
 msgstr "Удаляет вкладку \"Читаемость\" из METABOX и отключает все связанные с ней предложения."
 
 #: admin/formatter/class-metabox-formatter.php:237
-#: js/dist/editor-modules.js:189 js/dist/externals-components.js:2
+#: js/dist/editor-modules.js:192 js/dist/externals-components.js:2
 #: js/dist/externals/analysisReport.js:35
 msgid "Improvements"
 msgstr "Улучшения"
 
 #: admin/formatter/class-metabox-formatter.php:236
 #: admin/views/partial-notifications-errors.php:20
-#: js/dist/editor-modules.js:189 js/dist/externals-components.js:2
+#: js/dist/editor-modules.js:192 js/dist/externals-components.js:2
 #: js/dist/externals/analysisReport.js:35
 msgid "Problems"
 msgstr "Проблемы"
@@ -3452,7 +3480,7 @@ msgstr "Этот идентификатор должен принадлежат�
 
 #. Plugin Name of the plugin
 #: admin/capabilities/class-capability-manager-integration.php:72
-#: src/presenters/meta-description-presenter.php:36 js/dist/block-editor.js:596
+#: src/presenters/meta-description-presenter.php:36 js/dist/block-editor.js:598
 msgid "Yoast SEO"
 msgstr "Yoast SEO"
 
@@ -3907,8 +3935,8 @@ msgstr "Плагин %1$s может вызвать проблемы в соче
 msgid "Upload Image"
 msgstr "Загрузить изображение"
 
-#: admin/metabox/class-metabox.php:948
-#: src/integrations/third-party/elementor.php:481
+#: admin/metabox/class-metabox.php:949
+#: src/integrations/third-party/elementor.php:482
 msgid "SEO issue: The featured image should be at least 200 by 200 pixels to be picked up by Facebook and other social media sites."
 msgstr "Это изображение должно быть как минимум 200х200 пикселей, чтобы Facebook и другие социальные сети могли его использовать."
 
@@ -3970,7 +3998,7 @@ msgstr[1] "Удаленные <span class=\"count\">(%s)</span>"
 msgstr[2] "Удаленные <span class=\"count\">(%s)</span>"
 
 #: admin/metabox/class-metabox.php:888 admin/taxonomy/class-taxonomy.php:161
-#: admin/taxonomy/class-taxonomy.php:294
+#: admin/taxonomy/class-taxonomy.php:295
 #: src/integrations/third-party/elementor.php:429
 msgid "(no parent)"
 msgstr "(без родителя)"
@@ -3987,14 +4015,13 @@ msgstr "Действие"
 msgid "Anchor text for the homepage:"
 msgstr "Анкорный текст для главной страницы:"
 
-#: admin/metabox/class-metabox.php:198 js/dist/block-editor.js:504
-#: js/dist/classic-editor.js:504 js/dist/elementor.js:499
+#: admin/metabox/class-metabox.php:198 js/dist/block-editor.js:506
+#: js/dist/classic-editor.js:506 js/dist/elementor.js:501
 msgid "Canonical URL"
 msgstr "Канонический URL-адрес"
 
 #: admin/class-bulk-editor-list-table.php:815
-#: js/dist/first-time-configuration.js:27
-#: js/dist/first-time-configuration.js:28 js/dist/installation-success.js:7
+#: js/dist/first-time-configuration.js:9 js/dist/first-time-configuration.js:22
 msgid "Edit"
 msgstr "Изменить"
 
@@ -4024,13 +4051,13 @@ msgstr "Общие"
 msgid "Huge SEO Issue: You're blocking access to robots."
 msgstr "Серьёзная проблема для SEO: Вы блокируете доступ для поисковых роботов."
 
-#: admin/metabox/class-metabox.php:192 js/dist/block-editor.js:502
-#: js/dist/classic-editor.js:502 js/dist/elementor.js:497
+#: admin/metabox/class-metabox.php:192 js/dist/block-editor.js:504
+#: js/dist/classic-editor.js:504 js/dist/elementor.js:499
 msgid "No Archive"
 msgstr "Не архивировать"
 
-#: admin/metabox/class-metabox.php:191 js/dist/block-editor.js:502
-#: js/dist/classic-editor.js:502 js/dist/elementor.js:497
+#: admin/metabox/class-metabox.php:191 js/dist/block-editor.js:504
+#: js/dist/classic-editor.js:504 js/dist/elementor.js:499
 msgid "No Image Index"
 msgstr "Не индексировать изображения"
 
@@ -4125,16 +4152,16 @@ msgstr "Инструменты"
 msgid "Twitter username (without @)"
 msgstr "Ваше имя на Twitter (без @)"
 
-#: admin/class-config.php:108 admin/metabox/class-metabox.php:917
-#: admin/taxonomy/class-taxonomy.php:179
-#: src/integrations/third-party/elementor.php:455
+#: admin/class-config.php:108 admin/metabox/class-metabox.php:918
+#: admin/taxonomy/class-taxonomy.php:180
+#: src/integrations/third-party/elementor.php:456
 msgid "Use Image"
 msgstr "Использовать изображение"
 
-#: admin/class-bulk-editor-list-table.php:837 js/dist/block-editor.js:206
-#: js/dist/classic-editor.js:206 js/dist/editor-modules.js:131
-#: js/dist/elementor.js:201 js/dist/wincher-dashboard-widget.js:39
-#: js/dist/wincher-dashboard-widget.js:65
+#: admin/class-bulk-editor-list-table.php:837 js/dist/block-editor.js:209
+#: js/dist/classic-editor.js:209 js/dist/editor-modules.js:134
+#: js/dist/elementor.js:204 js/dist/wincher-dashboard-widget.js:42
+#: js/dist/wincher-dashboard-widget.js:68
 msgid "View"
 msgstr "Показать"
 
@@ -4179,8 +4206,8 @@ msgstr "Предупреждение: Вы можете указать здес�
 msgid "Prefix for search result pages:"
 msgstr "Prefix для страниц результатов поиска:"
 
-#: admin/metabox/class-metabox.php:193 js/dist/block-editor.js:502
-#: js/dist/classic-editor.js:502 js/dist/elementor.js:497
+#: admin/metabox/class-metabox.php:193 js/dist/block-editor.js:504
+#: js/dist/classic-editor.js:504 js/dist/elementor.js:499
 msgid "No Snippet"
 msgstr "Без сниппета"
 
@@ -4240,8 +4267,8 @@ msgstr "Префикс для цепочек навигации:"
 msgid "Breadcrumb for 404 pages:"
 msgstr "Цепочки навигации для страниц с ошибкой 404:"
 
-#: admin/metabox/class-metabox.php:195 js/dist/block-editor.js:503
-#: js/dist/classic-editor.js:503 js/dist/elementor.js:498
+#: admin/metabox/class-metabox.php:195 js/dist/block-editor.js:505
+#: js/dist/classic-editor.js:505 js/dist/elementor.js:500
 msgid "Breadcrumbs Title"
 msgstr "Заголовок для цепочек навигации"
 
@@ -4253,7 +4280,7 @@ msgstr "Заголовок этой страницы, который будет 
 msgid "Edit Files"
 msgstr "Изменение файлов"
 
-#: admin/metabox/class-metabox.php:189 js/dist/block-editor.js:502
-#: js/dist/classic-editor.js:502 js/dist/elementor.js:497
+#: admin/metabox/class-metabox.php:189 js/dist/block-editor.js:504
+#: js/dist/classic-editor.js:504 js/dist/elementor.js:499
 msgid "Meta robots advanced"
 msgstr "Расширенная настройка тега Meta Robots"

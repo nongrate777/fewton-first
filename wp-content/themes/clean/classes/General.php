@@ -34,8 +34,8 @@ class General
         add_action('widgets_init', array($this, 'theme_remove_search_widget'));
         /* Disable Search */
 
-        add_action('wpcf7_init', array($this, 'wpcf7_remove_assets'));
-        add_filter('shortcode_atts_wpcf7', array($this, 'wpcf7_add_assets'));
+        /*add_action('wpcf7_init', array($this, 'wpcf7_remove_assets'));
+        add_filter('shortcode_atts_wpcf7', array($this, 'wpcf7_add_assets'));*/
         add_action('wp_enqueue_scripts', array($this, 'enqueue_assets'));
         add_action('wp_enqueue_scripts', array($this, 'dequeue_assets'));
         add_action('admin_enqueue_scripts', array($this, 'admin_assets'));
@@ -194,7 +194,7 @@ class General
         unregister_widget('WP_Widget_Search');
     }
 
-    public static function wpcf7_remove_assets(): void
+    /*public static function wpcf7_remove_assets(): void
     {
         add_filter('wpcf7_load_js', '__return_false');
         add_filter('wpcf7_load_css', '__return_false');
@@ -209,7 +209,7 @@ class General
         wpcf7_enqueue_scripts();
 
         return $atts;
-    }
+    }*/
 
     public static function enqueue_assets(): void
     {

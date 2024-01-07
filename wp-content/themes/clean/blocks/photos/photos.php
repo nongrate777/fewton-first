@@ -17,6 +17,9 @@ $fields_img4 = $fields['img4'];
                     <img src="<?php echo wp_kses_post($fields_img1['url']); ?>"
                          alt="<?php echo wp_kses_post($fields_img1['alt']); ?>">
                 </div>
+                <svg width="1" height="62" viewBox="0 0 1 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 0V62" stroke="#969696"/>
+                </svg>
             <?php }
             ?>
             <?php
@@ -25,6 +28,9 @@ $fields_img4 = $fields['img4'];
                     <img src="<?php echo wp_kses_post($fields_img2['url']); ?>"
                          alt="<?php echo wp_kses_post($fields_img2['alt']); ?>">
                 </div>
+                <svg width="1" height="62" viewBox="0 0 1 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 0V62" stroke="#969696"/>
+                </svg>
             <?php }
             ?>
             <?php
@@ -33,6 +39,9 @@ $fields_img4 = $fields['img4'];
                     <img src="<?php echo wp_kses_post($fields_img3['url']); ?>"
                          alt="<?php echo wp_kses_post($fields_img3['alt']); ?>">
                 </div>
+                <svg width="1" height="62" viewBox="0 0 1 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 0V62" stroke="#969696"/>
+                </svg>
             <?php }
             ?>
             <?php
